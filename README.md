@@ -2,34 +2,49 @@
 
 ## Regression
 
-Predict a value of feature for a certain point in an infinite range.
+Predict a value of feature for a certain point within large range according to given dataset.
 
 - Linear Regression:
-  - Gradient Descent: get less cost function parameters (w,b).
-
+  
   - Single Variable regression: Regression for only one feature.
+    - Gradient Descent: get less prediction function parameters $(w,b)$ to minimize the cost function.
 
-  - Multiple variable regression: Single prediction (element by element) or (vectorization), Gradient Descent with multiple variables.
+  - Multiple variable regression: Single prediction (element by element) or (vectorization)
+    - Gradient Descent with multiple variables.
 
   - Learning Rate: choosing alpha
 
   - Feature Scaling: Rescaling of dataset so features have similiar ranges
 
-    - (x-min)/(max-min)
-
-    - mean normalization: (M - mean)/(max-min)
-
-    - Z-score normalization: (M - mean)/sd
+    - Usual Normalization $$
+      \begin{align}
+        \frac{(x - min)}{(max - min)} \newline
+      \end{align}
+      $$
+    - Mean Normalization $$
+      \begin{align}
+        \frac{(x - \mu)}{(max - min)} \newline
+      \end{align}
+      $$
+    - Z-Score Normalization $$
+      \begin{align}
+        \frac{(x - \mu)}{\sigma}  \newline
+      \end{align}
+      $$
 
 - Feature Engineering: Transforming a feature to design new features.
 
-- Polynomial Regression: one feature but polinomially distributed (1 + x + x**2 + x**3).
+- Polynomial Regression: one feature but polinomially distributed ( $1 + x + x^{2} + x^{3}$ ).
 
 ## Classification
 
 small range of values for one feature (0,1) (yes, no), (man, woman, child)
 
-- Sigmoid or Logistic function: for representing the range: g(z) = 1/(1+exp(-z)).
+- Sigmoid or Logistic function: for representing the range: $$
+  \begin{align} 
+  g(z) = \frac{1}{1 + e^{-z}}
+  \end{align}
+  $$
 
 - Logistic Regression: Applying the sigmoid function to the linear model.: f = g(w.x(i) + b).
 
