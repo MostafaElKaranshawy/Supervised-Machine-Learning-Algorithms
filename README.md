@@ -14,13 +14,13 @@
 
   - Feature Scaling: Rescaling of dataset so features have similiar ranges
 
-    - Usual Normalization 
+    - Usual Normalization
     $$
       \begin{align}
         \frac{(x - min)}{(max - min)} \newline
       \end{align}
       $$
-    - Mean Normalization 
+    - Mean Normalization
       $$
       \begin{align}
         \frac{(x - \mu)}{(max - min)} \newline
@@ -41,7 +41,7 @@
 
 small range of values for one feature (0,1) (yes, no), (man, woman, child)
 
-- Sigmoid or Logistic function: for representing the range: 
+- Sigmoid or Logistic function: for representing the range:
   $$
     g(z) = \frac{1}{1 + e^{-z}}
   $$
