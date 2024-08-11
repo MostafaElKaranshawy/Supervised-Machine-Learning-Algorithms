@@ -55,4 +55,5 @@ small range of values for one feature (0,1) (yes, no), (man, woman, child)
   - Gradient Descent.
   
 ### Overfitting
-  - Regularization for Linear and Logistic Regression.
+
+- Regularization for Linear and Logistic Regression.
