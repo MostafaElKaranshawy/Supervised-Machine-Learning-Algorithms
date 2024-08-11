@@ -1,8 +1,6 @@
-# Supervised Machine Learning
+# Supervised Machine Learning Algorithms
 
 ## Regression
-
-Predict a value of feature for a certain point within large range according to given dataset.
 
 - Linear Regression:
   
@@ -16,17 +14,20 @@ Predict a value of feature for a certain point within large range according to g
 
   - Feature Scaling: Rescaling of dataset so features have similiar ranges
 
-    - Usual Normalization $$
+    - Usual Normalization 
+    $$
       \begin{align}
         \frac{(x - min)}{(max - min)} \newline
       \end{align}
       $$
-    - Mean Normalization $$
+    - Mean Normalization 
+      $$
       \begin{align}
         \frac{(x - \mu)}{(max - min)} \newline
       \end{align}
       $$
-    - Z-Score Normalization $$
+    - Z-Score Normalization
+      $$
       \begin{align}
         \frac{(x - \mu)}{\sigma}  \newline
       \end{align}
@@ -40,10 +41,9 @@ Predict a value of feature for a certain point within large range according to g
 
 small range of values for one feature (0,1) (yes, no), (man, woman, child)
 
-- Sigmoid or Logistic function: for representing the range: $$
-  \begin{align} 
-  g(z) = \frac{1}{1 + e^{-z}}
-  \end{align}
+- Sigmoid or Logistic function: for representing the range: 
+  $$
+    g(z) = \frac{1}{1 + e^{-z}}
   $$
 
 - Logistic Regression: Applying the sigmoid function to the linear model.: f = g(w.x(i) + b).
@@ -53,3 +53,6 @@ small range of values for one feature (0,1) (yes, no), (man, woman, child)
   - Cost function.
 
   - Gradient Descent.
+  
+### Overfitting
+  - Regularization for Linear and Logistic Regression.
