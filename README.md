@@ -15,23 +15,29 @@
   - Feature Scaling: Rescaling of dataset so features have similiar ranges
 
     - Usual Normalization
-    $$
+
+      $$
       \begin{align}
         \frac{(x - min)}{(max - min)} \newline
       \end{align}
       $$
+
     - Mean Normalization
+    
       $$
       \begin{align}
         \frac{(x - \mu)}{(max - min)} \newline
       \end{align}
       $$
+
     - Z-Score Normalization
+    
       $$
       \begin{align}
         \frac{(x - \mu)}{\sigma}  \newline
       \end{align}
       $$
+
 
 - Feature Engineering: Transforming a feature to design new features.
 
@@ -42,6 +48,7 @@
 small range of values for one feature (0,1) (yes, no), (man, woman, child)
 
 - Sigmoid or Logistic function: for representing the range:
+  
   $$
     g(z) = \frac{1}{1 + e^{-z}}
   $$
